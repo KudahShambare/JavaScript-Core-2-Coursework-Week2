@@ -32,6 +32,12 @@ body {
   font-weight: 600;
   text-transform: uppercase;
 }
+/*Book Position*/
+.bookSetup {
+  display: inline-block;
+  width: max-content;
+  margin-left: 100px;
+}
 
 /* Buttons */
 .btn {

@@ -9,7 +9,6 @@ function shoppingList(arrayOfPeople) {
       let listItem = document.createElement("li");
       listItem.className = "shoppingList";
       listItem.innerHTML = arrayOfPeople[i];
-
       unorderedList.appendChild(listItem);
     }
 
