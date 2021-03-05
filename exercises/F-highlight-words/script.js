@@ -1,8 +1,10 @@
 function highlightWords(paragraph, colours) {
   // Write your code here...
   let content = document.getElementById("content");
+  content.style.fontSize = "25px";
   let paragraphElement = document.createElement("p");
   let selection = document.createElement("select");
+  selection.style.fontSize = "25px";
   content.appendChild(paragraphElement);
   content.appendChild(selection);
   let paragraphArray = paragraph.split(" ");
@@ -18,6 +20,9 @@ function highlightWords(paragraph, colours) {
     let span = document.createElement("span");
     span.innerHTML = paragraphArray[i] + " ";
     paragraphElement.appendChild(span);
+    span.addEventListener("click", function () {
+      span.style.backgroundColor = selection.value;
+    });
   }
 }
 // Add Events///////////////////////////////////////////////////////////////////////////////////
